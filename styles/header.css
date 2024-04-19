@@ -1,0 +1,197 @@
+div
+{
+  font-family: Roboto,Arial;
+}
+
+.header
+{
+  height:55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top:0px;
+  left:0px;
+  right:0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(222, 222, 222);
+}
+
+.left-section
+{
+  display: flex;
+  align-items: center;
+
+}
+
+.menu
+{
+  height: 25px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.logo
+{
+  height: 20px;
+}
+
+.middle-section
+{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+}
+
+.search-button
+{
+  height: 40px;
+  width:66px;
+  background-color: rgb(240,240,240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192,192,192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.search-icon
+{
+  height:25px;
+  cursor: pointer;
+}
+
+.searchbar
+{
+  flex: 1;
+  height: 37px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192,192,192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba (0,0,0,0.15);
+  width:0
+}
+
+.searchbar::placeholder
+{
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.search-voice
+{
+  border: none;
+  background-color: rgb(248, 248, 248);
+  width: 40px;
+  height:40px;
+  border-radius: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.right-section
+{
+  display: flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-between;
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+
+.voice-icon
+{
+  height: 25px;
+}
+
+.upload
+{
+  height: 25px;
+  cursor: pointer;
+}
+
+.apps
+{
+  height: 25px;
+  cursor: pointer;
+}
+
+.notifications
+{
+  height: 25px;
+  cursor: pointer;
+}
+
+.channel
+{
+  border-radius: 16px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.notif-icon
+{
+  display: flex;
+  align-items: center;
+  position:relative;
+}
+
+.notif-count
+{
+  position: absolute;
+  top:-3px;
+  right:-5px;
+  background-color: rgb(204, 0, 0);
+  color: white;
+  font-size: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.search-button .search-tt, .search-voice .search-tt, .upload-icon .search-tt, .apps-icon .search-tt,
+.notif-icon .search-tt
+{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom:-30px;
+  opacity: 0;
+  transition: opacity 0.5s ;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .search-tt, .search-voice:hover .search-tt, .upload-icon:hover .search-tt, 
+.apps-icon:hover .search-tt, .notif-icon:hover .search-tt
+{
+  opacity: 1;
+}
+
+.search-button,.search-voice, .upload-icon, .apps-icon, .notif-icon
+{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
